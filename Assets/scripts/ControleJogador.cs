@@ -7,11 +7,13 @@ public class ControleJogador : MonoBehaviour
     public bool inAir = false;
     public bool upsideDown = false;
     private Rigidbody2D rbJogador;
+    private Camera mainCamera;
 
     void Start()
     {
         rbJogador = GetComponent<Rigidbody2D>();
         rbJogador.velocity = new Vector2(7f, 0);
+
     }
     void Update()
     {
@@ -51,16 +53,17 @@ public class ControleJogador : MonoBehaviour
             if (upsideDown) rotationSpeed *= -1;
             rbJogador.transform.Rotate(rotationSpeed);
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("floor") && CollisionManagement.hasHitTop(collision))
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("basicPlatform") 
+            // && CollisionManagement.hasHitTop(collision)
+        )
         {
             inAir = false;
         }
     }
-
     
 }
