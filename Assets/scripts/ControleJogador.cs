@@ -5,7 +5,6 @@ using UnityEngine;
 public class ControleJogador : MonoBehaviour
 {
     public bool inAir = false;
-    public bool upsideDown = false;
     private Rigidbody2D rbJogador;
     private Camera mainCamera;
 
@@ -18,46 +17,38 @@ public class ControleJogador : MonoBehaviour
     void Update()
     {
 
-        // float movimentoLateral = Input.GetAxis("Horizontal");
-        // float movimentoVertical = Input.GetAxis("Vertical");
-
-        // rbJogador.velocity = new Vector2( movimentoLateral * 7f, rbJogador.velocity.y);
         rbJogador.velocity = new Vector2(7f, rbJogador.velocity.y);
-        if (!inAir && Input.GetKeyDown(KeyCode.Space))
-        {
-            inAir = true;
-            Vector2 jumpVelocity = new Vector2(0, 9f);
-            if (upsideDown) jumpVelocity *= -1;
-            rbJogador.AddForce(jumpVelocity, ForceMode2D.Impulse);
-        }
 
         //pular
+        if (!inAir && Input.GetKeyDown(KeyCode.Space)) jump();
+        
+        
+        //inverter gravidade
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            rbJogador.gravityScale *= -1;
-            upsideDown = !upsideDown;
+            Gravity.invertGravity(rbJogador);
         }
 
-        //inverter gravidade
-        if (upsideDown && rbJogador.rotation > 178 && rbJogador.rotation < 182)
-        {
-            rbJogador.transform.Rotate(Vector3.forward * 0);
-        }
-        else if (!upsideDown && rbJogador.rotation > -2 && rbJogador.rotation < 2)
-        {
-            rbJogador.transform.Rotate(Vector3.forward * 0);
-        }
-        else
-        {
-            Vector3 rotationSpeed = Vector3.forward * 360 * Time.deltaTime;
-            if (upsideDown) rotationSpeed *= -1;
-            rbJogador.transform.Rotate(rotationSpeed);
-        }
+        
+    }
+
+    //To be used in case of 
+    private void movePlayer() {
+        float movimentoLateral = Input.GetAxis("Horizontal");
+        float movimentoVertical = Input.GetAxis("Vertical");
+
+        rbJogador.velocity = new Vector2( movimentoLateral * 7f, rbJogador.velocity.y);
+    }
+
+    private void jump() {
+            inAir = true;
+            Vector2 jumpVelocity = new Vector2(0, 9f);
+            if (Gravity.isUpsideDown()) jumpVelocity *= -1;
+            rbJogador.AddForce(jumpVelocity, ForceMode2D.Impulse);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("basicPlatform") 
             // && CollisionManagement.hasHitTop(collision)
         )

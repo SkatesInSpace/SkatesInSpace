@@ -10,7 +10,6 @@ public class GerenciaJogo : MonoBehaviour
     // public TextMeshProUGUI txtVidas;
     // public TextMeshProUGUI txtPontos;
     // public TextMeshProUGUI txtGameOver;
-    // Start is called before the first frame update
     void Start()
     {
         // pontosJogo = 0;
