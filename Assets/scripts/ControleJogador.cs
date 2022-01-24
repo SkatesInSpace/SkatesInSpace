@@ -26,7 +26,7 @@ public class ControleJogador : MonoBehaviour
         //inverter gravidade
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            Gravity.invertGravity(rbJogador);
+            Gravity.invertPlatforms();
         }
 
         
