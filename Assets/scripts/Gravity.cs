@@ -7,21 +7,27 @@ public class Gravity : MonoBehaviour
     private static bool upsideDown = false;
     private static bool invertedPlatform = false;
     private GameObject player;
+    private GameObject floor;
     private Rigidbody2D rbPlayer;
 
-    void Start()
+     void Start()
     {
-        player = GameObject.FindGameObjectsWithTag("Player")[0];
+        player = ObjectHandler.getPlayer();
+        floor = ObjectHandler.getFloor();
+        
         rbPlayer = player.GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {   
-        if(player.GetComponent<Collider2D>().bounds.size.y/2 + player.transform.position.y < 0.03) rbPlayer.gravityScale = -3;
-        if(player.GetComponent<Collider2D>().bounds.size.y/2 + player.transform.position.y > 0.03) rbPlayer.gravityScale = 3;
+        float playerY = player.transform.position.y;
+        float floorY = floor.transform.position.y;
+        if(playerY < floorY) rbPlayer.gravityScale = -3;
+        if(playerY > floorY) rbPlayer.gravityScale = 3;
 
-        rotatePlayerIfNeeded();
+        // rotatePlayerIfNeeded();
     }
+
 
     private void rotatePlayerIfNeeded()
     {
@@ -53,7 +59,8 @@ public class Gravity : MonoBehaviour
     }
 
     public static void invertPlatforms() {
-        invertedPlatform = !invertedPlatform; 
+        invertedPlatform = !invertedPlatform;
+        upsideDown = !upsideDown;
         GameObject[] platforms = GameObject.FindGameObjectsWithTag("basicPlatform");
         foreach (GameObject platform in platforms)
         {
