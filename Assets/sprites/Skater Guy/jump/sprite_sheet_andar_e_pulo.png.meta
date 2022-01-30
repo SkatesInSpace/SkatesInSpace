@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 45966015adc7cc3fe9c8cadf4fb7a532
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7308469824660435440
+    second: sprite_sheet_andar_e_pulo_0
+  - first:
+      213: -5418930071858506924
+    second: sprite_sheet_andar_e_pulo_1
+  - first:
+      213: 9121182087942916172
+    second: sprite_sheet_andar_e_pulo_2
+  - first:
+      213: -1059132936209298358
+    second: sprite_sheet_andar_e_pulo_3
+  - first:
+      213: 9009070085732819567
+    second: sprite_sheet_andar_e_pulo_4
+  - first:
+      213: -8772662065918861729
+    second: sprite_sheet_andar_e_pulo_5
+  - first:
+      213: 3987666373445058218
+    second: sprite_sheet_andar_e_pulo_6
+  - first:
+      213: -3732632635181703755
+    second: sprite_sheet_andar_e_pulo_7
+  - first:
+      213: 1722347231128511554
+    second: sprite_sheet_andar_e_pulo_8
+  - first:
+      213: 2148085674751024462
+    second: sprite_sheet_andar_e_pulo_9
+  - first:
+      213: 8032123472345915354
+    second: sprite_sheet_andar_e_pulo_10
+  - first:
+      213: -5108852726252157854
+    second: sprite_sheet_andar_e_pulo_11
+  - first:
+      213: 1958594765667478605
+    second: sprite_sheet_andar_e_pulo_12
+  - first:
+      213: -1274592889594223314
+    second: sprite_sheet_andar_e_pulo_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1572
+        width: 726
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e04799a69139a90800000000000000
+      internalID: -7308469824660435440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_1
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1581
+        width: 693
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45311347fc71cc4b0800000000000000
+      internalID: -5418930071858506924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_2
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1572
+        width: 725
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c484e7b68c2f49e70800000000000000
+      internalID: 9121182087942916172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_3
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 1572
+        width: 726
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c045fb4343d41f0800000000000000
+      internalID: -1059132936209298358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_4
+      rect:
+        serializedVersion: 2
+        x: 3218
+        y: 1569
+        width: 725
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62e3b8c285a60d70800000000000000
+      internalID: 9009070085732819567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_5
+      rect:
+        serializedVersion: 2
+        x: 4012
+        y: 1581
+        width: 694
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e9c52a45e314680800000000000000
+      internalID: -8772662065918861729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 796
+        width: 746
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae76f76079075730800000000000000
+      internalID: 3987666373445058218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_7
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 796
+        width: 744
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdd6f60566033cc0800000000000000
+      internalID: -3732632635181703755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_8
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 815
+        width: 737
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244ea4b6ea107e710800000000000000
+      internalID: 1722347231128511554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_9
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 812
+        width: 716
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dd3a64a888fcd10800000000000000
+      internalID: 2148085674751024462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_10
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 840
+        width: 714
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf5149fdb5d77f60800000000000000
+      internalID: 8032123472345915354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_11
+      rect:
+        serializedVersion: 2
+        x: 3978
+        y: 846
+        width: 747
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26444f96385b919b0800000000000000
+      internalID: -5108852726252157854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_12
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 780
+        width: 738
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cac82ff835e2b10800000000000000
+      internalID: 1958594765667478605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_andar_e_pulo_13
+      rect:
+        serializedVersion: 2
+        x: 5551
+        y: 773
+        width: 744
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e256f7e158cbf4ee0800000000000000
+      internalID: -1274592889594223314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

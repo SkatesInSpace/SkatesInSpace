@@ -6,11 +6,13 @@ public class ControleJogador : MonoBehaviour
 {
     public bool inAir = false;
     private Rigidbody2D rbJogador;
+    private Animator animator;
     private GameObject floor;
 
     void Start()
     {
         rbJogador = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         rbJogador.velocity = new Vector2(7f, 0);
         floor = ObjectHandler.getFloor();
     }
@@ -28,17 +30,19 @@ public class ControleJogador : MonoBehaviour
         {
             Gravity.invertPlatforms();
 
-            Debug.Log("InvertPlatform");
             // Vector3 rotationPoint = new Vector3 (rbJogador.transform.position.x, floor.transform.position.y, 0);
             // transform.RotateAround(rotationPoint, transform.right, 180f);
             if(isInTheFloor()) {
-                Debug.Log("floor");
                 Vector3 rotationPoint = new Vector3 (rbJogador.transform.position.x, floor.transform.position.y, 0) ;
                 transform.RotateAround(rotationPoint, transform.right, 180f);
             }
         }
 
         
+    }
+
+    private void LateUpdate() {
+        animator.SetBool("inAir", inAir);
     }
 
     public bool isInTheFloor() {
@@ -56,7 +60,8 @@ public class ControleJogador : MonoBehaviour
 
     private void jump() {
             inAir = true;
-            Vector2 jumpVelocity = new Vector2(0, 9f);
+            animator.SetBool("inAir", inAir);
+            Vector2 jumpVelocity = new Vector2(0, 12f);
             if (Gravity.isUpsideDown()) jumpVelocity *= -1;
             rbJogador.AddForce(jumpVelocity, ForceMode2D.Impulse);
     }
@@ -68,6 +73,7 @@ public class ControleJogador : MonoBehaviour
         )
         {
             inAir = false;
+            animator.SetBool("inAir", inAir);
         }
     }
     

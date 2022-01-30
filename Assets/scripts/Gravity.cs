@@ -25,20 +25,26 @@ public class Gravity : MonoBehaviour
         if(playerY < floorY) rbPlayer.gravityScale = -3;
         if(playerY > floorY) rbPlayer.gravityScale = 3;
 
-        // rotatePlayerIfNeeded();
+    }
+
+    private void LateUpdate() {
+        rotatePlayerIfNeeded();
     }
 
 
     private void rotatePlayerIfNeeded()
     {
 
-        if (upsideDown && rbPlayer.rotation > 178 && rbPlayer.rotation < 182)
+        if (upsideDown && rbPlayer.rotation > 160 && rbPlayer.rotation < 200)
         {
-            rbPlayer.transform.Rotate(Vector3.forward * 0);
+            // rbPlayer.transform.Rotate(Vector3.forward * 0);
+            Debug.Log(rbPlayer.transform.eulerAngles);
+            rbPlayer.transform.eulerAngles = new Vector3(0,0,180);
         }
-        else if (!upsideDown && rbPlayer.rotation > -2 && rbPlayer.rotation < 2)
+        else if (!upsideDown && rbPlayer.rotation > -20 && rbPlayer.rotation < 20)
         {
-            rbPlayer.transform.Rotate(Vector3.forward * 0);
+            // rbPlayer.transform.Rotate(Vector3.forward * 0);
+            rbPlayer.transform.eulerAngles = new Vector3(0,0,0);
         }
         else
         {
